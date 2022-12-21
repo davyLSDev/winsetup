@@ -1,8 +1,11 @@
-# Windows setup using ansible
+# Develop ptlite/ptliteui with ansiblilized Windows 10 box
 
-## First order of business - get windows machine ready for ansible.
-### Being able to sign on to the windows box remotely from linux is not a needed step.
-I just want to work on the linux box on the dining room table where my wife is working.
+The title pretty much explains what the purpose of this repo is. The one detail missing in the title is that this is intended to set up a Windows 10 box to be ready to develop the whole ptlite stack.
+
+## History
+
+### First order of business - make machine ansible controlable.
+* Being able to sign on to the windows box remotely from linux is not a needed step, I just want to work on the linux box on the dining room table where my wife is working.
 1. Install remmina on the linux box
 2. Allow remote desktop and sharing
    1. My Computer > Properties > Remote Settings
@@ -17,7 +20,9 @@ I just want to work on the linux box on the dining room table where my wife is w
 
 ### This next bit is needed to control the win machine with ansible
 
-## Then figure out what needs installing
+### Packages to install and configuration needed
+
+### Required manual configuration
 
 ## References
 
