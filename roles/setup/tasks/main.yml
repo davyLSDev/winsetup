@@ -15,4 +15,5 @@
       - putty
       - tortoisehg
       - meld
+      - nodejs-lts
     state: present  
