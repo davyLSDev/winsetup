@@ -1,0 +1,9 @@
+---
+# file: roles/setup/tasks/main.yml
+- name: Get whoami information
+  win_whoami:
+  register: whoami_result
+
+- debug:
+    msg: "Windows agent user as reported by the whomai command {{ whoami_result.account.account_name }}"
+

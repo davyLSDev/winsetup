@@ -1,0 +1,9 @@
+---
+# file: roles/testing/tasks/main.yml
+
+- name: Save the result of 'whoami' command in 'whoami_result'
+  command: whoami
+  register: whoami_result
+
+- debug:
+    msg: "Linux agent user as reported by the whomai command {{ whoami_result.stdout }}"

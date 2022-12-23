@@ -1,0 +1,5 @@
+---
+# file: site.yml
+- hosts: win
+  roles:
+    - setup
