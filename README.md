@@ -57,7 +57,7 @@ Note, you can do other things through PowerShell to find this information but, t
 
 * Test out the most basic set up with authentication (not the most secure though)
 
-Create and *inventory* and fill it with:
+Create an *inventory* and fill it with:
 
 ```
 [win]
@@ -71,7 +71,12 @@ ansible_winrm_server_cert_validation=ignore
 ```
 * Test it out like this -> *ansible win -i inventory -m win_ping*
 
-### Packages to install and configuration needed
+### Chocolatey packages to install and configuration needed
+
+* visualstudio2019community
+* putty
+* tortoishg
+* meld
 
 ### Required manual configuration
 
