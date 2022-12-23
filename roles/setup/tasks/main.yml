@@ -1,19 +1,15 @@
 ---
 # file: roles/setup/tasks/main.yml
 
-- name: Install chocolatey
+- name: Install chocolatey and packages needed for building ptlite
   win_chocolatey:
     name:
       - chocolatey
       - chocolatey-core.extension
-    state: present
-
-- name: Install chocolatey packages needed for building ptlite
-  win_chocolatey:
-    name:
       - visualstudio2019community
       - putty
       - tortoisehg
       - meld
       - nodejs-lts
+      - googlechrome
     state: present  
