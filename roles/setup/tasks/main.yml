@@ -7,3 +7,12 @@
       - chocolatey
       - chocolatey-core.extension
     state: present
+
+- name: Install chocolatey packages needed for building ptlite
+  win_chocolatey:
+    name:
+      - visualstudio2019community
+      - putty
+      - tortoisehg
+      - meld
+    state: present  
