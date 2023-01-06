@@ -1,16 +1,5 @@
-[win]
-10.0.0.240
-
-#[win:vars]
-#ansible_user=dawson
-#ansible_password=oneway
-#ansible_connection=winrm
-#ansible_winrm_server_cert_validation=ignore
+[dawsonwin]
+172.16.1.154
 
 [local]
 127.0.0.1
-
-#[local:vars]
-#ansible_user=test
-#ansible_password=test
-#ansible_become_pass=test
